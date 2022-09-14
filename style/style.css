@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+header{
+    width: 100%;
+    padding: 50px;
+    /* background-color: aqua; */
+    justify-content: flex-end;
+}
+header ul{
+    width: 592px;
+    margin-right: 220px;
+    /* background-color: green; */
+    justify-content: space-between;
+}
+header ul li a{
+    padding: 23px 26px 23px 18px; 
+    /* background-color: rgb(121, 179, 49); */
+    background-color: rgb(196, 196, 196);
+    border-radius: 0px 35px;
+    color: rgb(0, 0, 0);
+}
+header ul li a:hover{
+    background-color: rgb(121, 179, 49);
+    color: #ffffff;
+}
+main{
+    width: 100%;
+    background-image: url(../img/vegan.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    padding-top: 110px;    
+}
+.anim{
+    width: 388px;
+    height: 150px;
+    /* background-color: white; */
+    margin: 0px 230px 0px 710px;
+    padding: 52px 0px;
+    position: relative;
+}
+
+.anim h2{
+    color: black;
+    font-size: 18px;
+    /* background-color: red; */
+    text-align: center;
+    padding-bottom: 10px;
+}
+.time{
+    width: 388px;
+    font-size: 26px;
+    color:  black;
+    /* background-color: aqua; */
+    text-align: center;
+}
+.circle{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(121, 179, 49);
+    position: absolute;
+    animation: circle 2s infinite;
+
+}
+
+@keyframes circle {
+    0%{top: 0; left: 0;}
+    25%{top: 0; left: 356px;}
+    50%{top: 128px; left: 356px;}
+    75%{top: 128px; left: 0;}
+    100%{top: 0; left: 0;}
+}
+.cont{
+    width: 970px;
+    height: 430px;
+    /* background-color: black; */
+    margin-top: 140px;
+    margin-left: 340px;
+    position: relative;
+}
+.ghero{
+    width: 2px;
+    height: 430px;
+    margin: 0 auto;
+    background-color: rgb(196, 196, 196);
+}
+
+.text{
+    display: block;
+    width: 70%;
+    padding: 5px 10px;
+    color: black;
+    /* background-color: red; */
+    /* text-align: center; */
+    margin: 0 auto;
+}
+.box{
+    width: 484px;
+    height: 82px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.boxx{
+    top: 0;
+    left: 0;
+}
+.box1{
+    top: 124px;
+    left: 50%;
+}
+.box2{
+    top: 240px;
+    left: 0;
+}
+.box3{
+    top: 352px;
+    left: 50%;
+}
+.fotoli{
+    width: 70px;
+    height: 70px;
+    border-radius: 0px 35px;
+    background-color: rgb(196, 196, 196);
+}
+.fotoli2{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px 0px;
+    background-color: rgb(196, 196, 196);
+}
+.box:hover .fotoli{
+    background-color: rgb(121, 179, 49);
+}
+.box:hover .text{
+    color: rgb(121, 179, 49);
+    font-weight: 700;
+}
